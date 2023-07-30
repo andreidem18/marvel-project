@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroesListComponent should match with the snapshot 1`] = `
+"<section class="heroes-container"><div class="input-search-container"><shared-input-search><input type="text" placeholder="Search a character" class="input-search ng-untouched ng-pristine ng-valid" ng-reflect-form="[object Object]"></shared-input-search></div><div class="header"><div class="characters-title"><img src="../../../../assets/icons/characters.png" alt=""><strong>Characters</strong></div><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><select ng-reflect-form="[object Object]" class="ng-untouched ng-pristine ng-valid"><option value="name" ng-reflect-value="name">Sort by</option><option value="name" ng-reflect-value="name">Name</option><option value="modified" ng-reflect-value="modified">Modified date</option></select></div><ul class="heroes-list"><li class="heroe-item"><heroe-card ng-reflect-hero="[object Object]"><div class="card-container"><div class="card-upper"><div class="image-container"><img src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg" alt="3-D Man"></div><div class="hero-info"><strong data-test="hero-name" class="hero-name">3-D Man</strong><p class="hero-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptate nobis quas nesciunt atque illum aliquam incidunt sit veniam, asperiores... </p><div class="button-container"><button>View more</button></div></div></div><div class="related-comics"><strong>Related comics</strong><ul class="related-comics-list"><li data-test="comic-item"><img src="../../../../assets/icons/link-arrow.png" alt=""><span>Avengers: The Initiative (2007) #14</span></li><li data-test="comic-item"><img src="../../../../assets/icons/link-arrow.png" alt=""><span>Avengers: The Initiative (2007) #14 (SPOTLIGHT VARIANT)</span></li><li data-test="comic-item"><img src="../../../../assets/icons/link-arrow.png" alt=""><span>Avengers: The Initiative (2007) #15</span></li><li data-test="comic-item"><img src="../../../../assets/icons/link-arrow.png" alt=""><span>Avengers: The Initiative (2007) #16</span></li><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></ul><span class="show-comics"> ▼ Show all comics </span><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></heroe-card></li><li class="heroe-item"><heroe-card ng-reflect-hero="[object Object]"><div class="card-container"><div class="card-upper"><div class="image-container"><img src="http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg" alt="A-Bomb (HAS)"></div><div class="hero-info"><strong data-test="hero-name" class="hero-name">A-Bomb (HAS)</strong><p class="hero-description"> Rick Jones has been Hulk's best bud since day one, but now he's more than a friend...he's a teammate! Transformed by a Gamma energy explosion, A-Bomb'... </p><div class="button-container"><button>View more</button></div></div></div><div class="related-comics"><strong>Related comics</strong><ul class="related-comics-list"><li data-test="comic-item"><img src="../../../../assets/icons/link-arrow.png" alt=""><span>FREE COMIC BOOK DAY 2013 1 (2013) #1</span></li><li data-test="comic-item"><img src="../../../../assets/icons/link-arrow.png" alt=""><span>Hulk (2008) #53</span></li><li data-test="comic-item"><img src="../../../../assets/icons/link-arrow.png" alt=""><span>Hulk (2008) #54</span></li><li data-test="comic-item"><img src="../../../../assets/icons/link-arrow.png" alt=""><span>Hulk (2008) #55</span></li><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></ul><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></heroe-card></li><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></ul><shared-pagination ng-reflect-limit="20" ng-reflect-offset="0" ng-reflect-total="1562"><ul class="pagination-container"><li class="pagination-button center button disabled" ng-reflect-ng-class="[object Object]"> ⮜ </li><li class="pagination-button center selected" ng-reflect-ng-class="[object Object]"> 1 </li><li class="pagination-button center" ng-reflect-ng-class="[object Object]"> 2 </li><li class="pagination-button center" ng-reflect-ng-class="[object Object]"> 3 </li><li class="pagination-button center" ng-reflect-ng-class="[object Object]"> 4 </li><li class="pagination-button center" ng-reflect-ng-class="[object Object]"> 5 </li><!--bindings={
+  "ng-reflect-ng-for-of": "1,2,3,4,5"
+}--><li class="pagination-button center button" ng-reflect-ng-class="[object Object]"> ⮞ </li></ul></shared-pagination></section><!--bindings={
+  "ng-reflect-ng-if": "[object Object]"
+}--><comic-detail ng-reflect-is-open="false"><shared-modal-wrapper style="width: 80%;" ng-reflect-is-open="false"><div class="modal-container wrap center" ng-reflect-ng-class="[object Object]"><div class="modal-body"><!--bindings={}--></div><div class="overlay wrap"></div></div></shared-modal-wrapper></comic-detail>"
+`;

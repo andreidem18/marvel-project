@@ -1,0 +1,12 @@
+.input-search {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 14px;
+    padding-right: 50px;
+    border-radius: 1px;
+    border: none;
+    display: block;
+    position: relative;
+    background: #fff url(../../../../assets/icons/search.png) no-repeat 98%;
+}
+

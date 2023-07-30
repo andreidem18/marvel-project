@@ -1,0 +1,18 @@
+<div class="favorite-item" (click)="openComicDetail()">
+    <button class="trash-btn" (click)="onRemoveFavorite($event)">
+        <img src="../../../../assets/icons/btn-delete.png" alt="">
+    </button>
+    <img 
+        [src]="favorite.image" 
+        [alt]="favorite.name"
+        class="comic-image"
+    >
+    <strong class="comic-name">
+        {{favorite.name}}
+    </strong>
+</div>
+
+<comic-detail 
+    [(isOpen)]="isComicDetailOpen" 
+    [comicData]="favorite"
+/>

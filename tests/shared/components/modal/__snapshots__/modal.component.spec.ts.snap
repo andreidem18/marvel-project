@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalComponent should match with the snapshot 1`] = `"<div class="modal-container wrap center active" ng-reflect-ng-class="[object Object]"><div class="modal-body"></div><div class="overlay wrap"></div></div>"`;

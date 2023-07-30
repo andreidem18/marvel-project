@@ -1,0 +1,48 @@
+<div class="card-container">
+    <div class="card-upper">
+        <div class="image-container">
+            <img [src]="heroImage" [alt]="hero.name">
+        </div>
+        <div class="hero-info">
+            <strong class="hero-name" data-test="hero-name">{{hero.name}}</strong>
+            <p class="hero-description">
+                {{(hero.description ? hero.description : defaultDescription) | truncateText:150}}
+            </p>
+            <div class="button-container">
+                <button (click)="openHeroDetail()">View more</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="related-comics">
+        <strong>Related comics</strong>
+        <ul class="related-comics-list">
+            <li 
+                *ngFor="let comic of hero.comics.items.slice(0, 4)" 
+                (click)="selectComic(comic)"
+                data-test="comic-item"
+            >
+                <img src="../../../../assets/icons/link-arrow.png" alt="">
+                <span>{{comic.name | truncateText:70}}</span>
+            </li>
+        </ul>
+        <span 
+            *ngIf="hero.comics.items.length > 4"
+            class="show-comics"
+            (click)="toggleShowAllComics()"
+        >
+            {{showAllComics ? '▲ Hide all comics' : '▼ Show all comics'}}
+        </span>
+        <ul class="related-comics-list" *ngIf="showAllComics">
+            <li 
+                *ngFor="let comic of hero.comics.items.slice(4)" 
+                (click)="selectComic(comic)"
+                data-test="comic-item"
+            >
+                <img src="../../../../assets/icons/link-arrow.png" alt="">
+                <span>{{comic.name | truncateText:70}}</span>
+            </li>
+        </ul>
+    </div>
+
+</div>

@@ -1,0 +1,27 @@
+
+
+
+<ul class="pagination-container">
+    <li 
+        class="pagination-button center button"
+        [ngClass]="{'disabled': currentPage === 1}"
+        (click)="currentPage !== 1 && selectPage(currentPage - 1)"
+    >
+        ⮜
+    </li>
+    <li 
+        *ngFor="let page of pages" 
+        class="pagination-button center"
+        [ngClass]="{'selected': page === currentPage}"
+        (click)="selectPage(page)"
+    >
+        {{page}}
+    </li>
+    <li 
+        class="pagination-button center button"
+        [ngClass]="{'disabled': currentPage === totalPages}"
+        (click)="currentPage !== totalPages && selectPage(currentPage + 1)"
+    >
+        ⮞
+    </li>
+</ul>

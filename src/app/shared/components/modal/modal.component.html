@@ -1,0 +1,14 @@
+<div 
+    class="modal-container wrap center"
+    [ngClass]="{'active': isOpen}"
+>
+    <div class="modal-body">
+
+        <ng-content ></ng-content>
+        
+    </div>
+    <div 
+        class="overlay wrap"
+        (click)="close()"
+    ></div>
+</div>

@@ -1,0 +1,27 @@
+.favorite-item {
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto 2rem;
+    cursor: pointer;
+}
+
+.favorite-item .trash-btn {
+    width: 33px;
+    background: none;
+    margin-bottom: -20px;
+    margin-right: -15px;
+    margin-left: auto;
+    display: block;
+    position: relative;
+}
+
+.favorite-item .comic-image {
+    margin-bottom: .6rem;
+}
+
+.favorite-item .comic-name {
+    display: block;
+    text-align: center;
+}
+
+

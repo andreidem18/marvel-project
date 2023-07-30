@@ -1,0 +1,72 @@
+.heroes-container {
+    padding: 0 20px;
+    padding-bottom: 5rem;
+}
+
+.input-search-container {
+    margin-top: 1.5rem;
+}
+
+.header  {
+    margin-top: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.header .characters-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.header .characters-title img {
+    width: auto;
+}
+
+.header .spinner {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.header select {
+    border: 1px solid #c0c0c0;
+    border-radius: 1px;
+    padding: 15px 15px;
+    display: block;
+    font-size: 1rem;
+    text-indent: 5px;
+    width: 100%;
+}
+
+
+.heroes-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.heroe-item {
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 13px;
+}
+
+@media (min-width: 570px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header select {
+        width: 240px;
+    }
+}
+
+@media (min-width: 768px) {
+    .input-search-container {
+        display: none;
+    }
+    .heroes-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

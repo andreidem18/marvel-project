@@ -1,0 +1,8 @@
+
+<ul class="toasts-list" >
+    <li class="toast-item" *ngFor="let toast of toastsList">
+        <div class="toast-body" [ngStyle]="{'background': 'var(--'+toast.severity+')'}">
+            <p>{{toast.message}}</p>
+        </div>
+    </li>
+</ul>

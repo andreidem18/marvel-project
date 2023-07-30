@@ -1,0 +1,29 @@
+<nav class="navbar">
+    <div class="items-container col-9">
+
+        <img 
+            src="../../../../assets/images/Marvel_Logo.svg.webp" 
+            alt="marvel logo"
+            class="logo"
+            (click)="getAllHeroes()"
+        >
+    
+        <div class="input-container">
+            <shared-input-search />
+        </div>
+
+    </div>
+
+    <button class="hamburguer-button center" (click)="openSidebar()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</nav>
+
+<div class="sidebar-container wrap" [ngClass]="{'open': isSidebarOpen}">
+
+    <div class="sidebar">
+        
+        <comics-favorites-list />
+    </div>
+    <div class="overlay wrap" (click)="closeSidebar()"></div>
+</div>

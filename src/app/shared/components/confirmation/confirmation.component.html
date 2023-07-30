@@ -1,0 +1,11 @@
+<shared-modal-wrapper [isOpen]="isOpen" (isOpenChange)="close()">
+    <div class="confirmation">
+        <div class="message-container">
+            <div [innerHTML]="confirmation.message"></div>
+        </div>
+        <div class="buttons-container">
+            <button class="no" (click)="close()">no</button>
+            <button class="yes" (click)="fireAction()">yes</button>
+        </div>
+    </div>
+</shared-modal-wrapper>

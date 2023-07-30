@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./assets/fonts/montserrat.ttf);
+}
+
+/* ======================= Variables ======================= */
+
+:root {
+    --primary: #ec1d23;
+    --secondary: #2d2727;
+    --success: #198754;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --font-color: #483e3d;
+    --font-color-light: #7a706f;
+    --font-color-extra-light: #c5c1c2;
+    --font-color-bold: #3c3332;
+    --font-color-contrast: #fff;
+    --surface: #f4f4f4;
+    --surface-dark: #ebebeb;
+    --surface-darker: #dcdcdc;
+    --surface-light: #ffffff;
+    --surface-light-highlight: #f8f9f9;
+}
+
+
+
+
+/* ======================= Default styles ======================= */
+
+body {
+    background: var(--surface);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font-color);
+    font-family: 'Montserrat';
+}
+
+img {
+    width: 100%;
+}
+
+input, select {
+    outline: 0;
+}
+
+ul { list-style: none; }
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* ======================= Utility classes ======================= */
+
+.flex   { display:  flex; }
+.col-1  { width: 8.33333%; }
+.col-3  { width: 25%;}
+.col-4  { width: 33.33333%;}
+.col-6  { width: 50%;}
+.col-8  { width: 66.66666%;}
+.col-9  { width: 75%;}
+.col-12 { width: 100%;}
+
+.container { 
+    margin: 0 auto;
+    padding: 0 20px;
+ }
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

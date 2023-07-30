@@ -1,0 +1,97 @@
+.navbar{
+    background: var(--secondary);
+    padding: 10px 0;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+
+.navbar .logo {
+    width: 10rem;
+    cursor: pointer;
+}
+
+
+.navbar .input-container {
+    display: none;
+}
+
+.hamburguer-button {
+    margin-right: 20px;
+    font-size: 1.2rem;
+    border: 2px solid #8a8383;
+    border-radius: 5px;
+    color: #8a8383;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+}
+
+.hamburguer-button i { color: inherit; }
+
+.sidebar-container {
+    position: fixed;
+    z-index: 9;
+    visibility: hidden;
+    transition: .5s ease-in-out;
+}
+
+.sidebar-container.open {
+    visibility: visible;
+    transition: .5s ease-in-out;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -50%;
+    width: 90%;
+    z-index: 9;
+    max-width: 350px;
+    overflow-x: auto;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.sidebar-container.open .sidebar {
+    right: 0;
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, .3);
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.sidebar-container.open .overlay {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .navbar .input-container {
+        display: block;
+        width: 66%;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 1114px) {
+    .hamburguer-button, .sidebar-container {
+        display: none;
+    }
+}

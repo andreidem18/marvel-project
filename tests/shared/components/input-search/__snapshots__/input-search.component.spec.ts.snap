@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputSearchComponent should match with the snapshot 1`] = `"<input type="text" placeholder="Search a character" class="input-search ng-untouched ng-pristine ng-valid" ng-reflect-form="[object Object]">"`;

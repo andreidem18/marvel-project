@@ -1,0 +1,30 @@
+<div class="favorites-container">
+
+    <strong class="favorites-title">
+        <img src="../../../../assets/icons/favourites.png" alt="">
+        <span>My favorites</span>
+    </strong>
+
+    <ng-container *ngIf="favoritesList.length; else noFavorites">
+        <ul class="favorites-list">
+            <li 
+                class="favorite-item" 
+                *ngFor="let favorite of favoritesList"
+                data-test="favorite-item"
+            >
+                <comic-favorite-item [favorite]="favorite" />
+            </li>
+        </ul>
+    </ng-container>
+    <ng-template #noFavorites>
+        <div class="no-comics">
+            <img src="../../../../assets/images/no-comics.svg" alt="no comics">
+            <span>Currently, you don't have favorite comics.</span>
+            <button (click)="pickRandomFavorites()" data-test="random-comics-button">
+                Add three random comics!
+            </button>
+        </div>
+    </ng-template>
+    
+    
+</div>

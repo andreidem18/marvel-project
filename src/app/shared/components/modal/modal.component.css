@@ -1,0 +1,25 @@
+.modal-container {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .2s, opacity .2s linear;
+    z-index: 9;
+}
+
+.modal-container.active {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .2s, opacity .2s linear;
+}
+
+.modal-container .overlay {
+    position: absolute;
+    background: rgba(0,0,0,.3);
+}
+
+
+.modal-container .modal-body {
+    position: relative;
+    z-index: 9;
+    background: var(--surface-light);
+}

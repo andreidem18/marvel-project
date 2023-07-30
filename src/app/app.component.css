@@ -1,0 +1,21 @@
+.page-container {
+    display: flex;
+}
+
+.heroes {
+    width: 100%;
+}
+
+.favorites {
+    display: none;
+}
+
+@media (min-width: 1114px) {
+    .favorites {
+        display: block;
+        width: 25%;
+    }
+    .heroes {
+        width: 75%;
+    }
+}

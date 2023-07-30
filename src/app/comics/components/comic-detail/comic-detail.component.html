@@ -1,0 +1,52 @@
+
+<shared-modal-wrapper [isOpen]="isOpen" (isOpenChange)="close()" style="width: 80%;"  >
+
+    <div class="comic-detail" *ngIf="comic">
+
+            
+        <div class="flex comic-info">
+            <img 
+                [src]="comicImage" 
+                [alt]="comic.title" 
+                class="col-4" 
+            >
+
+            <div class="details" class="col-8">
+
+                <strong class="comic-title">
+                    {{comic.title}}
+                </strong>
+                <div class="comic-description" [innerHtml]="comic.description">
+                </div>
+            </div>
+
+            <button class="btn-close" (click)="close()">
+                <img 
+                    src="../../../../assets/icons/btn-close.png" 
+                    alt="close"
+                >
+            </button>
+        </div>
+
+        <div class="options">
+            <ng-container *ngIf="!isFavorite; else removeFavorite">
+                <button class="add-favorite center" (click)="addToFavorites()">
+                    <img src="../../../../assets/icons/btn-favourites-default.png" alt="favorites-icon">
+                    <span>Add to favorites</span>
+                </button>
+            </ng-container>
+            <ng-template #removeFavorite>
+                <button class="remove-favorite center" (click)="onRemoveFavorite()">
+                    <img src="../../../../assets/icons/btn-favourites-primary.png" alt="favorites-icon">
+                    <span>Remove from favorites</span>
+                </button>
+            </ng-template>
+            
+            <button class="buy center" (click)="buyComic()">
+                <img src="../../../../assets//icons/shopping-cart-primary.png" alt="shopping cart icon">
+                <span>Buy for ${{comic.prices[0].price}}</span>
+            </button>
+        </div>
+
+    </div>
+</shared-modal-wrapper>

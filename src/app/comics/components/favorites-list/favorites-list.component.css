@@ -1,0 +1,57 @@
+.favorites-container {
+    background: var(--surface-dark);
+    /* height: 100%; */
+    min-height: 100vh;
+    padding: 2rem 1.5rem 5rem;
+}
+
+.favorites-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.favorites-title img {
+    width: auto;
+}
+
+.favorites-title span {
+    color: var(--font-color-bold);
+}
+
+.no-comics {
+    margin-top: 4rem;
+}
+
+.no-comics img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.no-comics span {
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.no-comics button {
+    background: var(--secondary);
+    color: #fff;
+    padding: 15px;
+    display: block;
+    margin: 1rem auto 0;
+    font-size: 1rem;
+}
+
+.no-comics button:hover {
+    filter: brightness(130%);
+}
+
+@media (min-width: 1114px) {
+    .favorites-container {
+        height: 100%;
+    }
+}

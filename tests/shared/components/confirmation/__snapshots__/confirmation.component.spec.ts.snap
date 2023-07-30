@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmationComponent should match with the snapshot 1`] = `
+<div
+  id="root1"
+>
+  <shared-modal-wrapper>
+    <div
+      class="modal-container wrap center active"
+    >
+      <div
+        class="modal-body"
+      >
+        <div
+          class="confirmation"
+        >
+          <div
+            class="message-container"
+          >
+            <div>
+              Testing confirmation
+            </div>
+          </div>
+          <div
+            class="buttons-container"
+          >
+            <button
+              class="no"
+            >
+              no
+            </button>
+            <button
+              class="yes"
+            >
+              yes
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="overlay wrap"
+      />
+    </div>
+  </shared-modal-wrapper>
+</div>
+`;

@@ -1,0 +1,32 @@
+.confirmation {
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.message-container {
+    padding: 30px;
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    height: 60px;
+}
+
+.buttons-container button {
+    width: 50%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    /* color: var(--primary); */
+    background: var(--surface-dark);
+}
+
+.buttons-container button:hover {
+    filter: brightness(103%);
+    transition: .1s;
+}
+
+.buttons-container button.no {
+    color: var(--font-color-contrast);
+    background: var(--secondary);
+}

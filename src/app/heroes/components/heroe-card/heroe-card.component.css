@@ -1,0 +1,126 @@
+.card-container {
+    background: var(--surface-light);
+    height: 100%;
+}
+
+.card-container .card-upper {
+    display: flex;
+    /* margin-left: -15px; */
+    position: relative;
+    left: -15px;
+    top: -13px;
+}
+
+.card-container .card-upper .image-container {
+    width: 45%;
+    padding-right: 10px;
+}
+
+.card-container .card-upper .image-container img {
+    border-radius: 50%;
+    position: relative;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    box-shadow: 6px 6px 5px -4px rgba(0,0,0,0.18);
+}
+
+.card-container .card-upper .hero-info {
+    width: 55%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-info .hero-name {
+    display: block;
+    color: var(--font-color-bold);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.hero-info .hero-description {
+    font-size: .9rem;
+    line-height: 1.3rem;
+    color: var(--font-color-light);
+    margin-bottom: 20px;
+}
+
+.hero-info .button-container {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 15px;
+}
+
+.hero-info button {
+    background: var(--primary);
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.related-comics {
+    padding: 0 20px 20px 20px;
+}
+
+.related-comics * {
+    color: var(--font-color-light);
+}
+
+.related-comics > strong {
+    display: block;
+    width: fit-content;
+    margin-bottom: .7rem;
+}
+
+.related-comics .related-comics-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .7rem;
+}
+
+.related-comics-list li {
+    font-size: .85rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.related-comics-list li span {
+    padding-right: 14px;
+}
+
+.related-comics-list li img {
+    width: 0;
+    transition: .5s;
+}
+
+.related-comics-list li:hover span {
+    color: var(--primary);
+    padding-right: 0;
+    padding-left: 3px;
+    transition: .5s;
+}
+
+.related-comics-list li:hover img {
+    width: 16px;
+}
+
+.related-comics .show-comics {
+    display: block;
+    width: fit-content;
+    font-size: .9rem;
+    margin-top: .7rem;
+    margin-bottom: 1rem;
+}
+
+.related-comics .show-comics:hover {
+    color: var(--primary);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+

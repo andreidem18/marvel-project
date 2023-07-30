@@ -1,0 +1,48 @@
+
+<section class="heroes-container" *ngIf="heroesList">
+
+    
+    <div class="input-search-container">
+        <shared-input-search />
+    </div>
+
+    <div class="header">
+        <div class="characters-title">
+            <img src="../../../../assets/icons/characters.png" alt="">
+            <strong>Characters</strong>
+        </div>
+
+        <img 
+            src="../../../../assets/images/three-dots-spinner.svg" 
+            alt="loading"
+            class="spinner"
+            *ngIf="isLoading"
+        >
+    
+        <select [formControl]="orderBy">
+            <option value="name">Sort by</option>
+            <option value="name">Name</option>
+            <option value="modified">Modified date</option>
+        </select>
+    </div>
+
+
+    <ul class="heroes-list">
+        <li class="heroe-item" *ngFor="let hero of heroesList.results">
+            <heroe-card [hero]="hero" (onSelectComic)="selectComic($event)" />
+        </li>
+    </ul>
+
+    <shared-pagination 
+        [limit]="heroesList.limit"
+        [offset]="heroesList.offset"
+        [total]="heroesList.total"
+        (setNewPage)="setPagination($event)"
+    />
+
+</section>
+
+<comic-detail 
+    [(isOpen)]="isComicOpen"
+    [comicData]="comicSelected" 
+/>
